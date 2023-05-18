@@ -1,4 +1,4 @@
-import TaskListComponent from "../../components/container/task_list"
+import TaskListComponent from "../../components/container/task_list";
 
 const TaskPage = () => {
     return (
