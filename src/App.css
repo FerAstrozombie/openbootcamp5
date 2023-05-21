@@ -34,3 +34,22 @@ h5 {
     justify-content: space-evenly;
     align-items: center;
 }
+
+.chistes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.like, .jokes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
+
+h2{
+    text-align: center;
+}
