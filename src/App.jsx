@@ -4,23 +4,17 @@ import LoginPage from "./pages/auth/LoginPage";
 import TaskListComponent from "./components/container/task_list";
 import './App.css'
 import RegisterFormik from "./components/pure/form/registerFormik";
+import HomeIcon from '@mui/icons-material/Home';
+import LockOpenIcon from '@mui/icons-material/LockOpen';
+import LoginIcon from '@mui/icons-material/Login';
+import ChuckNorris from "./components/pure/ChuckNorris";
 
 function App() {
 
   let logged = true;
 
   return (
-    <Router>
-      <Link to="/"> HOME </Link>
-      <Link to="/registro"> REGISTER </Link>
-      <Link to="/login"> LOGIN </Link>
-      <Routes>
-        <Route path="/" element={logged ? <TaskListComponent /> : <Navigate to="/login" replace />} />
-        <Route path="/registro" element={<RegisterFormik />} />
-        <Route path="/login" element={<LoginPage />} />
-        <Route element={<NotFoundPage />} />
-      </Routes>
-    </Router>
+    <ChuckNorris />
   )
 }
 
